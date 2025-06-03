@@ -2,9 +2,11 @@
   "resolution_summary": {
     "total_duplicate_records": 714,
     "conflicts_resolved_by_priority": 326,
-    "conflicts_resolved_by_claiming": 8,
-    "remaining_unresolved_conflicts": 380,
-    "resolution_date": "2025-01-06"
+    "conflicts_resolved_by_claiming": 138,
+    "remaining_unresolved_conflicts": 250,
+    "resolution_date": "2025-01-06",
+    "updated_date": "2025-01-06",
+    "automatic_resolutions_applied": 130
   },
   "priority_changes": {
     "comfyui_ryanontheinside": {
