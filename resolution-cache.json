@@ -1,0 +1,39 @@
+{
+  "search_priority_changes": {
+    "comfyui_ryanontheinside": 6,
+    "node-registry-test": 10,
+    "comfyui_essentials_mb": 6,
+    "ComfyUI_KurtHokke-Nodes": 8,
+    "ComfyUI_KurtHokke_Nodes": 8,
+    "comfyui_ipadapter_plus_fork": 6
+  },
+  "claimed_node_names": {
+    "TextSplitByDelimiter": "comfyui-mixlab-nodes",
+    "Color": "comfyui-mixlab-nodes",
+    "OllamaGenerate": "comfyui-ollama",
+    "OllamaGenerateAdvance": "comfyui-ollama",
+    "OllamaVision": "comfyui-ollama",
+    "ImageRGBA2RGB": "comfyui-reactor-node",
+    "ReActorBuildFaceModel": "comfyui-reactor-node",
+    "ReActorFaceSwap": "comfyui-reactor-node"
+  },
+  "api_cache": {
+    "comfyui_ryanonyheinside": {
+      "description": "Custom nodes introducing everything-reactivity and timelines to ComfyUI",
+      "author": "ryanontheinside",
+      "downloads": 5331,
+      "rating": 0,
+      "status": "active",
+      "duplicates_count": 152
+    },
+    "comfyui_ryanontheinside": {
+      "description": "Custom nodes introducing everything-reactivity and timelines to ComfyUI",
+      "author": "ryanontheinside", 
+      "downloads": 1374,
+      "rating": 0,
+      "status": "deleted",
+      "duplicates_count": 150
+    }
+  },
+  "processed_records": []
+}

@@ -1,0 +1,96 @@
+{
+  "resolution_summary": {
+    "total_duplicate_records": 714,
+    "conflicts_resolved_by_priority": 326,
+    "conflicts_resolved_by_claiming": 8,
+    "remaining_unresolved_conflicts": 380,
+    "resolution_date": "2025-01-06"
+  },
+  "priority_changes": {
+    "comfyui_ryanontheinside": {
+      "new_priority": 6,
+      "old_priority": 5,
+      "reason": "Lower downloads (1,374) compared to typo version (5,331), deleted status"
+    },
+    "node-registry-test": {
+      "new_priority": 10,
+      "old_priority": 5,
+      "reason": "Test pack should not compete with production pack comfyui-animatediff-evolved"
+    },
+    "comfyui_essentials_mb": {
+      "new_priority": 6,
+      "old_priority": 5,
+      "reason": "Fork with fewer downloads (2,145) vs original (457,540)"
+    },
+    "ComfyUI_KurtHokke-Nodes": {
+      "new_priority": 8,
+      "old_priority": 5,
+      "reason": "Security concerns - multiple flags for subprocess, exec/eval usage"
+    },
+    "ComfyUI_KurtHokke_Nodes": {
+      "new_priority": 8,
+      "old_priority": 5,
+      "reason": "Security concerns - multiple flags for subprocess, exec/eval usage"
+    },
+    "comfyui_ipadapter_plus_fork": {
+      "new_priority": 6,
+      "old_priority": 5,
+      "reason": "Fork with much fewer downloads (927) vs original (268,329)"
+    }
+  },
+  "claimed_node_names": {
+    "TextSplitByDelimiter": {
+      "claimed_by": "comfyui-mixlab-nodes",
+      "reason": "Higher downloads (127,430 vs 16,043) and broader multimedia scope",
+      "competing_packs": ["comfyui-ollamagemini"]
+    },
+    "Color": {
+      "claimed_by": "comfyui-mixlab-nodes",
+      "reason": "10x more downloads (127,430 vs 13,082) and broader color/image functionality",
+      "competing_packs": ["comfyui-hakuimg"]
+    },
+    "OllamaGenerate": {
+      "claimed_by": "comfyui-ollama",
+      "reason": "Original implementation with 19x more downloads (65,789 vs 3,455)",
+      "competing_packs": ["comfyui-ollama-yn"]
+    },
+    "OllamaGenerateAdvance": {
+      "claimed_by": "comfyui-ollama",
+      "reason": "Original implementation with 19x more downloads (65,789 vs 3,455)",
+      "competing_packs": ["comfyui-ollama-yn"]
+    },
+    "OllamaVision": {
+      "claimed_by": "comfyui-ollama",
+      "reason": "Original implementation with 19x more downloads (65,789 vs 3,455)",
+      "competing_packs": ["comfyui-ollama-yn"]
+    },
+    "ImageRGBA2RGB": {
+      "claimed_by": "comfyui-reactor-node",
+      "reason": "comfyui-reactor not found in actual database registry",
+      "competing_packs": ["comfyui-reactor"]
+    },
+    "ReActorBuildFaceModel": {
+      "claimed_by": "comfyui-reactor-node",
+      "reason": "comfyui-reactor not found in actual database registry",
+      "competing_packs": ["comfyui-reactor"]
+    },
+    "ReActorFaceSwap": {
+      "claimed_by": "comfyui-reactor-node",
+      "reason": "comfyui-reactor not found in actual database registry",
+      "competing_packs": ["comfyui-reactor"]
+    }
+  },
+  "major_unresolved_conflicts": {
+    "data_analysis_vs_pt_wrapper": {
+      "conflicting_packs": ["data-analysis", "pt-wrapper"],
+      "reason_not_resolved": "Both serve different purposes (data visualization vs PyTorch operations)",
+      "affected_nodes": 106,
+      "decision": "Intentionally left as tie - both packs can coexist"
+    }
+  },
+  "process_metadata": {
+    "decisions_logged": "priority-decisions.log",
+    "cache_file": "resolution-cache.json",
+    "priority_scale": "1-10 (lower number = higher priority, default = 5)"
+  }
+}

@@ -1,0 +1,49 @@
+# Node Priority Decision Log
+
+## Decision 1: Ryan's Audio/Timeline Packs
+**Decision:** Deprioritize `comfyui_ryanontheinside` to priority 6 (from default 5)
+**Rationale:** Lower download count (1,374) compared to `comfyui_ryanonyheinside` (5,331). The typo version is actually more popular and should remain at default priority.
+
+## Decision 2: HowToSD Data Analysis Packs  
+**Decision:** No action taken
+**Rationale:** Both `data-analysis` and `pt-wrapper` serve different purposes (data visualization vs PyTorch operations) and can coexist without priority changes.
+
+## Decision 3: AnimateDiff Packs
+**Decision:** Deprioritize `node-registry-test` to priority 10 (from default 5)
+**Rationale:** Test pack should not compete with production pack `comfyui-animatediff-evolved` which has 119,307 downloads. Test packs deserve significant deprioritization.
+
+## Decision 4: ComfyUI Essentials
+**Decision:** Deprioritize `comfyui_essentials_mb` to priority 6 (from default 5)
+**Rationale:** Fork has significantly fewer downloads (2,145) compared to original `comfyui_essentials` (457,540). Original should maintain priority.
+
+## Decision 5: KurtHokke Nodes
+**Decision:** Deprioritize both `ComfyUI_KurtHokke-Nodes` and `ComfyUI_KurtHokke_Nodes` to priority 8 (from default 5)
+**Rationale:** Both versions flagged with multiple security warnings (subprocess, exec/eval usage). Security concerns override download differences (3,205 vs 203).
+
+## Decision 6: IPAdapter Plus
+**Decision:** Deprioritize `comfyui_ipadapter_plus_fork` to priority 6 (from default 5)
+**Rationale:** Original has massive download advantage (268,329 vs 927). Despite fork having newer version (3.0.2 vs 2.0.0), user adoption favors original.
+
+---
+
+## **CLAIMING DECISIONS**
+
+## Claim 1: TextSplitByDelimiter
+**Decision:** Claim `TextSplitByDelimiter` for `comfyui-mixlab-nodes`
+**Rationale:** Mixlab has significantly higher downloads (127,430 vs 16,043) and broader multimedia toolkit scope. Generic text utility fits their comprehensive offering.
+
+## Claim 2: Color
+**Decision:** Claim `Color` for `comfyui-mixlab-nodes`
+**Rationale:** Mixlab has 10x more downloads (127,430 vs 13,082) and broader scope including color/image functionality. Both packs have security flags, so downloads decide.
+
+## Claim 3: BiRefNet_Loader
+**Decision:** No claiming
+**Rationale:** While KayTool has more downloads (13,649 vs 1,943), BiRefNet_Loader is highly specialized for BiRefNet models. Both packs can reasonably provide this functionality.
+
+## Claim 4: Ollama Nodes (OllamaGenerate, OllamaGenerateAdvance, OllamaVision)
+**Decision:** Claim all three for `comfyui-ollama`
+**Rationale:** Original implementation has 19x more downloads (65,789 vs 3,455) and appears to be the main Ollama integration for ComfyUI.
+
+## Claim 5: ReActor Nodes (ImageRGBA2RGB, ReActorBuildFaceModel, ReActorFaceSwap)
+**Decision:** Claim all three for `comfyui-reactor-node`
+**Rationale:** While API shows comfyui-reactor has more downloads, user reports comfyui-reactor is not in the actual database. Claiming for the pack that exists in the registry.
