@@ -5,7 +5,10 @@
     "comfyui_essentials_mb": 6,
     "ComfyUI_KurtHokke-Nodes": 8,
     "ComfyUI_KurtHokke_Nodes": 8,
-    "comfyui_ipadapter_plus_fork": 6
+    "comfyui_ipadapter_plus_fork": 6,
+    "pt-wrapper": 6,
+    "comfyui-pixtralllamavision": 7,
+    "havocscall_custom_nodes": 6
   },
   "claimed_node_names": {
     "TextSplitByDelimiter": "comfyui-mixlab-nodes",
@@ -145,7 +148,42 @@
     "opt translate google": "comfyui-opttools",
     "re_sub_str": "ComfyUI_KurtHokke-Nodes",
     "str_str": "ComfyUI_KurtHokke-Nodes",
-    "str_str_str_str": "ComfyUI_KurtHokke-Nodes"
+    "str_str_str_str": "ComfyUI_KurtHokke-Nodes",
+    "AudioConcatenate": "comfyui_ryanonyheinside",
+    "AudioInfo": "comfyui_ryanonyheinside",
+    "ColorPicker": "comfyui_ryanonyheinside",
+    "AudioCombine": "comfyui_ryanonyheinside",
+    "CV2InpaintTexture": "comfyui-hunyan3dwrapper",
+    "DownloadAndLoadHy3DDelightModel": "comfyui-hunyan3dwrapper",
+    "DownloadAndLoadHy3DPaintModel": "comfyui-hunyan3dwrapper",
+    "Hy3DApplyTexture": "comfyui-hunyan3dwrapper",
+    "Hy3DBakeFromMultiview": "comfyui-hunyan3dwrapper",
+    "Hy3DCameraConfig": "comfyui-hunyan3dwrapper",
+    "Hy3DDelightImage": "comfyui-hunyan3dwrapper",
+    "Hy3DDiffusersSchedulerConfig": "comfyui-hunyan3dwrapper",
+    "Hy3DExportMesh": "comfyui-hunyan3dwrapper",
+    "Hy3DGenerateMesh": "comfyui-hunyan3dwrapper",
+    "Hy3DGetMeshPBRTextures": "comfyui-hunyan3dwrapper",
+    "Hy3DIMRemesh": "comfyui-hunyan3dwrapper",
+    "Hy3DLoadMesh": "comfyui-hunyan3dwrapper",
+    "Hy3DMeshInfo": "comfyui-hunyan3dwrapper",
+    "Hy3DMeshUVWrap": "comfyui-hunyan3dwrapper",
+    "Hy3DMeshVerticeInpaintTexture": "comfyui-hunyan3dwrapper",
+    "Hy3DModelLoader": "comfyui-hunyan3dwrapper",
+    "Hy3DPostprocessMesh": "comfyui-hunyan3dwrapper",
+    "Hy3DRenderMultiView": "comfyui-hunyan3dwrapper",
+    "Hy3DRenderMultiViewDepth": "comfyui-hunyan3dwrapper",
+    "Hy3DRenderSingleView": "comfyui-hunyan3dwrapper",
+    "Hy3DSampleMultiView": "comfyui-hunyan3dwrapper",
+    "Hy3DSetMeshPBRAttributes": "comfyui-hunyan3dwrapper",
+    "Hy3DSetMeshPBRTextures": "comfyui-hunyan3dwrapper",
+    "Hy3DTorchCompileSettings": "comfyui-hunyan3dwrapper",
+    "Hy3DVAEDecode": "comfyui-hunyan3dwrapper",
+    "Blur": "comfyui-post-processing-nodes",
+    "Glow": "comfyui-post-processing-nodes",
+    "Pixelize": "comfyui-post-processing-nodes",
+    "Prompt Truncate": "comfyui-textnodes",
+    "Tidy Tags": "comfyui-textnodes"
   },
   "api_cache": {
     "comfyui_ryanonyheinside": {
@@ -163,6 +201,246 @@
       "rating": 0,
       "status": "deleted",
       "duplicates_count": 150
+    },
+    "data-analysis": {
+      "downloads": 1234,
+      "description": "Data analysis custom modules for ComfyUI \u2013 Integrates Pandas, Seaborn and Matplotlib into ComfyUI.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/HowToSD/ComfyUI-Data-Analysis",
+      "publisher": "HowToSD",
+      "name": "ComfyUI-Data-Analysis",
+      "tags": []
+    },
+    "pt-wrapper": {
+      "downloads": 734,
+      "description": "PyTorch extension for ComfyUI featuring extensive PyTorch wrapper nodes for seamless tensor operations and PyTorch model training.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/HowToSD/ComfyUI-Pt-Wrapper",
+      "publisher": "HowToSD",
+      "name": "ComfyUI-Pt-Wrapper",
+      "tags": []
+    },
+    "comfyui-hunyan3dwrapper": {
+      "downloads": 19320,
+      "description": "Wrapper nodes for https://github.com/Tencent/Hunyuan3D-2, additional installation steps needed, please check the github repository",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/kijai/ComfyUI-Hunyuan3DWrapper",
+      "publisher": "Kijai",
+      "name": "ComfyUI-ComfyUI-Hunyuan3DWrapper",
+      "tags": []
+    },
+    "comfyui-videonoisewarp": {
+      "downloads": 4315,
+      "description": "Nodes to generate noise from video for https://github.com/Eyeline-Research/Go-with-the-Flow",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/kijai/ComfyUI-VideoNoiseWarp",
+      "publisher": "Kijai",
+      "name": "ComfyUI-ComfyUI-VideoNoiseWarp",
+      "tags": []
+    },
+    "comfyui-pixtralllamamolmovision": {
+      "downloads": 3264,
+      "description": "For loading and running Pixtral, Llama 3.2 Vision, and Molmo models. Put models in the models/LLM folder.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/SeanScripts/ComfyUI-PixtralLlamaMolmoVision",
+      "publisher": "SeanScripts",
+      "name": "ComfyUI-PixtralLlamaMolmoVision",
+      "tags": []
+    },
+    "comfyui-pixtralllamavision": {
+      "downloads": 843,
+      "description": "For loading and running Pixtral, Llama 3.2 Vision, and Molmo models. Put models in the models/LLM folder.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/SeanScripts/ComfyUI-PixtralLlamaVision",
+      "publisher": "SeanScripts",
+      "name": "ComfyUI-PixtralLlamaVision",
+      "tags": []
+    },
+    "aicu-comfyui-stability-ai-api": {
+      "downloads": 521,
+      "description": "This repository contains custom nodes for Stability AI API which supports SD3.0 and 3.5.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/aicuai/aicu-comfyui-stability-ai-api/",
+      "publisher": "AICU Japan",
+      "name": "aicu-comfyui-stability-ai-api",
+      "tags": []
+    },
+    "comfyui-stability-ai-api": {
+      "downloads": 898,
+      "description": "A collection of custom nodes for using the Stability AI API in ComfyUI.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/yhayano-ponotech/comfyui-stability-ai-api",
+      "publisher": "Yas | PONOTECH",
+      "name": "ComfyUI-Stability-AI-API",
+      "tags": []
+    },
+    "comfyui-get-random-file": {
+      "downloads": 1163,
+      "description": "\ud83d\ude80 Picks a random IMAGE file from a directory and provides you with the IMAGE and its filepath as a STRING. This awesome tool brings a touch of randomness to your files and images, making your file management tasks a breeze.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/ChrisColeTech/ComfyUI-Get-Random-File",
+      "publisher": "ChrisColeTech",
+      "name": "ComfyUI-Get-Random-File",
+      "tags": []
+    },
+    "comfyui-mango-random": {
+      "downloads": 1049,
+      "description": "\ud83e\udd6d Mango Random Nodes - A collection of random file nodes for ComfyUI",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/mango-rgb/ComfyUI-Mango-Random-node",
+      "publisher": "Mango",
+      "name": "ComfyUI-Mango-Random",
+      "tags": []
+    },
+    "comfyui-if_ai_promptimagem": {
+      "downloads": 1657,
+      "description": "Run Local and API LLMs, Features OCR-RAG (Bialdy), nanoGraphRAG, Supervision Object Detection, Conditioning manipulation via Omost, supports Ollama, LlamaCPP LMstudio, Koboldcpp, TextGen, Transformers or via APIs Anthropic, Groq, OpenAI, Google Gemini, Mistral, xAI and create your own charcters assistants (SystemPrompts) with custom presets and muchmore",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/if-ai/Changedname",
+      "publisher": "impactframes",
+      "name": "Changed name Deleteme",
+      "tags": []
+    },
+    "comfyui-if_ai_tools": {
+      "downloads": 12225,
+      "description": "Run Local and API LLMs, Features OCR-RAG (Bialdy), nanoGraphRAG, Supervision Object Detection, Conditioning manipulation via Omost, supports Ollama, LlamaCPP LMstudio, Koboldcpp, TextGen, Transformers or via APIs Anthropic, Groq, OpenAI, Google Gemini, Mistral, xAI and create your own charcters assistants (SystemPrompts) with custom presets and muchmore",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/if-ai/ComfyUI-IF_AI_tools",
+      "publisher": "impactframes",
+      "name": "IF_AI_tools",
+      "tags": []
+    },
+    "comfyui_if_ai_tools": {
+      "downloads": 1322,
+      "description": "ComfyUI-IF_AI_tools is a set of custom nodes to Run Local and API LLMs and LMMs, Features OCR-RAG (Bialdy), nanoGraphRAG, Supervision Object Detection, supports Ollama, LlamaCPP LMstudio, Koboldcpp, TextGen, Transformers or via APIs Anthropic, Groq, OpenAI, Google Gemini, Mistral, xAI and create your own charcters assistants (SystemPrompts) with custom presets and muchmore",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/if-ai/",
+      "publisher": "impactframes",
+      "name": "ComfyUI_IF",
+      "tags": []
+    },
+    "comfyui-prompt-factory": {
+      "downloads": 1453,
+      "description": "A modular system that adds randomness to prompt generation",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/satche/comfyui-prompt-factory",
+      "publisher": "Satche",
+      "name": "Prompt Factory",
+      "tags": []
+    },
+    "comfyui-scene-composer": {
+      "downloads": 4196,
+      "description": "A collection of nodes to facilitate the creation of explicit NSFW scenes in ComfyUI.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/taches-ai/comfyui-scene-composer",
+      "publisher": "Taches",
+      "name": "\ud83c\udf9e\ufe0f Scene Composer",
+      "tags": []
+    },
+    "comfyui-hakuimg": {
+      "downloads": 13192,
+      "description": "Image processing tool for ComfyUI.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/licyk/ComfyUI-HakuImg",
+      "publisher": "licyk",
+      "name": "ComfyUI-HakuImg",
+      "tags": []
+    },
+    "comfyui-post-processing-nodes": {
+      "downloads": 41361,
+      "description": "A collection of post processing nodes for ComfyUI, which enable a variety of visually striking image effects",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/EllangoK/ComfyUI-post-processing-nodes",
+      "publisher": "Karun",
+      "name": "ComfyUI-post-processing-nodes",
+      "tags": []
+    },
+    "comfyui_caption_this": {
+      "downloads": 6705,
+      "description": "Describe a single image or all images in a directory using models such as Janus Pro, Florence2, or JoyCaption (testing), with a particular focus on building datasets for training LoRA.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/MieMieeeee/ComfyUI-CaptionThis",
+      "publisher": "Mie",
+      "name": "ComfyUI_CaptionThis",
+      "tags": []
+    },
+    "comfyui_janus_pro_caption": {
+      "downloads": 689,
+      "description": "This project is deprecated. Please use ComfyUI-CaptionThis, which supports not only Janus Pro for captioning but also Florence2 and JoyCaption (in testing).",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/MieMieeeee/ComfyUI-JanusProCaption",
+      "publisher": "Mie",
+      "name": "ComfyUI_JanusProCaption",
+      "tags": []
+    },
+    "pixeloe": {
+      "downloads": 1328,
+      "description": "Detail-Oriented Pixelization based on Contrast-Aware Outline Expansion.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/KohakuBlueleaf/PixelOE",
+      "publisher": "KohakuBlueLeaf",
+      "name": "PixelOE",
+      "tags": []
+    },
+    "havocscall_custom_nodes": {
+      "downloads": 2521,
+      "description": "Just some nodes that help me.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/HavocsCall/ComfyUI_HavocsCall_Custom_Nodes",
+      "publisher": "HavocsCall",
+      "name": "HavocsCall_Custom_Nodes",
+      "tags": []
+    },
+    "mikey_nodes": {
+      "downloads": 55776,
+      "description": "Collection of convenient nodes. Wildcard, style, image, llm, haldclut, metadata, and more.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/bash-j/mikey_nodes",
+      "publisher": "humblemikey",
+      "name": "mikey_nodes",
+      "tags": []
+    },
+    "comfyui-colornodes": {
+      "downloads": 1069,
+      "description": "Basic Color Nodes for ComfyUI",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/akierson/comfyui-colornodes",
+      "publisher": "akierson",
+      "name": "ComfyUI-ColorNodes",
+      "tags": []
+    },
+    "comfyui-textnodes": {
+      "downloads": 1296,
+      "description": "Misc Text Nodes for Comfy UI",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/akierson/ComfyUI-textnodes",
+      "publisher": "akierson",
+      "name": "ComfyUI-TextNodes",
+      "tags": []
     }
   },
   "processed_records": []
