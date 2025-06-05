@@ -7,8 +7,17 @@
     "ComfyUI_KurtHokke_Nodes": 8,
     "comfyui_ipadapter_plus_fork": 6,
     "pt-wrapper": 6,
-    "comfyui-pixtralllamavision": 7,
-    "havocscall_custom_nodes": 6
+    "comfyui-pixtralllamavision": 8,
+    "havocscall_custom_nodes": 6,
+    "comfyui-hakuimg": 6,
+    "comfyui-rmbg": 4,
+    "comfyui_if_ai_tools": 6,
+    "bongsang": 6,
+    "comfyui-glifnodes-fork": 6,
+    "was-node-suite-comfyui": 6,
+    "comfyui_billbum_api_nodes": 6,
+    "comfuinoda-Navyblue": 6,
+    "comfyui-deforum": 6
   },
   "claimed_node_names": {
     "TextSplitByDelimiter": "comfyui-mixlab-nodes",
@@ -183,7 +192,25 @@
     "Glow": "comfyui-post-processing-nodes",
     "Pixelize": "comfyui-post-processing-nodes",
     "Prompt Truncate": "comfyui-textnodes",
-    "Tidy Tags": "comfyui-textnodes"
+    "Tidy Tags": "comfyui-textnodes",
+    "JanusProCaptionImageUnderDirectory|Mie": "comfyui_caption_this",
+    "JanusProDescribeImage|Mie": "comfyui_caption_this",
+    "JanusProModelLoader|Mie": "comfyui_caption_this",
+    "BlurFusionForegroundEstimation": "comfyui_birefnet_ll",
+    "ColorCorrect": "comfyui-art-venture",
+    "Face Similarity": "comfyui_facesimilarity",
+    "ListMerge": "comfyui-easyapi-nodes",
+    "MergeImageChannels": "comfyui-kjnodes",
+    "RoundNode": "comfyui-logicutils",
+    "SaveAudioTensor": "comfyui_jags_audiotools",
+    "SaveImageWithMetaData": "comfyui-saveimagewithmetadata",
+    "SenseVoiceNode": "comfyui-mixlab-nodes",
+    "Sleep": "comfyui-kjnodes",
+    "String": "comfyui-logic",
+    "TTPlanet_Tile_Preprocessor_Simple": "comfyui_ttp_toolset",
+    "TextBox": "easyanimate",
+    "WeightedRandomChoice": "comfyui-logicutils",
+    "googletrans": "comfyui-googletrans"
   },
   "api_cache": {
     "comfyui_ryanonyheinside": {
@@ -440,6 +467,896 @@
       "repository": "https://github.com/akierson/ComfyUI-textnodes",
       "publisher": "akierson",
       "name": "ComfyUI-TextNodes",
+      "tags": []
+    },
+    "comfyui-birefnet": {
+      "downloads": 2348,
+      "description": "Bilateral Reference Network achieves SOTA result in multi Salient Object Segmentation dataset, this repo pack BiRefNet as ComfyUI nodes, and make this SOTA model easier use for everyone.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/viperyl/ComfyUI-BiRefNet",
+      "publisher": "Zephrus shawn",
+      "name": "ComfyUI-BiRefNet",
+      "tags": []
+    },
+    "comfyui-mvadapter": {
+      "downloads": 50151,
+      "description": "This extension integrates [a/MV-Adapter](https://github.com/huanngzh/MV-Adapter) into ComfyUI, allowing users to generate multi-view consistent images from text prompts or single images directly within the ComfyUI interface.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/huanngzh/ComfyUI-MVAdapter",
+      "publisher": "Zehuan Huang",
+      "name": "ComfyUI-MVAdapter",
+      "tags": []
+    },
+    "comfyui-rmbg": {
+      "downloads": 65309,
+      "description": "A sophisticated ComfyUI custom node engineered for advanced image background removal and precise segmentation of objects, faces, clothing, and fashion elements. This tool leverages a diverse array of models, including RMBG-2.0, INSPYRENET, BEN, BEN2, BiRefNet models, SAM, and GroundingDINO, while also incorporating a new feature for real-time background replacement and enhanced edge detection for improved accuracy.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/1038lab/ComfyUI-RMBG",
+      "publisher": "AILab",
+      "name": "ComfyUI-RMBG",
+      "tags": []
+    },
+    "was-node-suite-comfyui": {
+      "downloads": 376245,
+      "description": "",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/WASasquatch/was-node-suite-comfyui",
+      "publisher": "WAS",
+      "name": "WAS Node Suite",
+      "tags": []
+    },
+    "was-ns": {
+      "downloads": 2073,
+      "description": "A massive node pack consisting of over 200 nodes, including image processing, masking, text handling, and arithmetic operations.\nNOTE: A replacement node pack provided for existing users following the retirement of the original author of the widely used WAS Node Suite.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/ltdrdata/was-node-suite-comfyui",
+      "publisher": "Dr.Lt.Data",
+      "name": "WAS Node Suite (Revised)",
+      "tags": []
+    },
+    "comfyui_billbum_api_nodes": {
+      "downloads": 18,
+      "description": "API call node for Third-party platforms both official and local. Support VLMs LLMs Dalle3 Flux-Pro(Support kontext now!!) etc(new Support gpt-image-1!!). And some little tools: img to b64 url, b64 url to img, b64 url to b64 data, reg text to word and ',' only, etc.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/AhBumm/ComfyUI_BillBum_APIset_Nodes",
+      "publisher": "billbum",
+      "name": "ComfyUI_BillBum_Nodes",
+      "tags": []
+    },
+    "comfyui_billbum_nodes": {
+      "downloads": 1373,
+      "description": "API call node for Third-party platforms both official and local. Support VLMs LLMs Dalle3 Flux-Pro etc(new Support gpt-image-1 api!!!). And some little tools: img to b64 url, b64 url to img, b64 url to b64 data, reg text to word and ',' only, etc.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/AhBumm/ComfyUI_BillBum_Nodes",
+      "publisher": "billbum",
+      "name": "ComfyUI_BillBum_Nodes",
+      "tags": []
+    },
+    "comfyui_if_ai_loadimages": {
+      "downloads": 2276,
+      "description": "It Load Images with subfolders form arbitrary folders previous on node outputs lists- convinient selection via file browser",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/if-ai/ComfyUI_IF_AI_LoadImages",
+      "publisher": "impactframes",
+      "name": "IF_LoadImages",
+      "tags": []
+    },
+    "comfyui-easyapi-nodes": {
+      "downloads": 2921,
+      "description": "Provides some features and nodes related to API calls. \u5f00\u53d1\u72ec\u7acb\u5e94\u7528\u8c03\u7528ComfyUI\u670d\u52a1\u7684\u4e00\u4e9b\u8865\u5145\u8282\u70b9\u3002",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/lldacing/comfyui-easyapi-nodes",
+      "publisher": "lldacing",
+      "name": "comfyui-easyapi-nodes",
+      "tags": []
+    },
+    "image2oss": {
+      "downloads": 192,
+      "description": "\u4f7f\u7528\u963f\u91cc\u4e91oss\u4e0a\u7684\u56fe\u7247,\u6216\u8005\u4fdd\u5b58\u7ed3\u679c\u56fe\u7247\u81f3\u963f\u91cc\u4e91oss,\u5177\u4f53\u4f7f\u7528\u8bf7\u770bgithub\u6587\u6863\nhttps://github.com/nxt5656/image2oss",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/nxt5656/image2oss",
+      "publisher": "nxt5656",
+      "name": "comfyui_image2oss",
+      "tags": []
+    },
+    "onebuttonprompt-mw": {
+      "downloads": 704,
+      "description": "A node that assists in one click generation of prompts (for image and video generation, etc.) in Comfyui.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/billwuhao/ComfyUI_OneButtonPrompt",
+      "publisher": "MW",
+      "name": "MW-ComfyUI_OneButtonPrompt",
+      "tags": []
+    },
+    "comfylab-pack": {
+      "downloads": 1567,
+      "description": "Nodes: fully-customizable and versatile XY Plot grid, dynamic outputs from config files, Format String, various List utilities, ... visit the wiki for a complete list, tutorials and more.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/bugltd/ComfyLab-Pack",
+      "publisher": "Bug, Ltd.",
+      "name": "ComfyLab Pack",
+      "tags": []
+    },
+    "comfyui-ollamagemini": {
+      "downloads": 16386,
+      "description": "ComfyUI extension for Ollama, Gemini, OpenAI, Claude, and Qwen with video and audio support",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/al-swaiti/ComfyUI-OllamaGemini",
+      "publisher": "AbdallahAlswaiti",
+      "name": "ComfyUI-OllamaGemini",
+      "tags": []
+    },
+    "text-utility": {
+      "downloads": 1558,
+      "description": "Custom node to handle text. Save and load text files. Remove comments from text.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/watarika/ComfyUI-Text-Utility",
+      "publisher": "watarika",
+      "name": "ComfyUI-Text-Utility",
+      "tags": []
+    },
+    "ardent-nodes-comfyui": {
+      "downloads": 1427,
+      "description": "Show Text; Filename Prefix By Date; Positive Only (CLIP Encode Prompt); ...",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/ardentillumina/ardent-comfy",
+      "publisher": "Ardent Illumina",
+      "name": "Ardent-Nodes-ComfyUI",
+      "tags": []
+    },
+    "comfyui-show-text": {
+      "downloads": 4215,
+      "description": "A simple but powerful node for ComfyUI that displays text input in a readable format. Perfect for viewing outputs from text generation nodes, prompt builders, interrogators, and more.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/fairy-root/ComfyUI-Show-Text.git",
+      "publisher": "Fairy Root",
+      "name": "ComfyUI-Show-Text",
+      "tags": []
+    },
+    "comfyui-text-randomizer": {
+      "downloads": 1120,
+      "description": "A simple text randomizer for ComfyUI that can generate random and surprising results",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/nosiu/comfyui-text-randomizer",
+      "publisher": "nosiu",
+      "name": "comfyui-text-randomizer",
+      "tags": []
+    },
+    "ComfyUI-TypeAux": {
+      "downloads": 873,
+      "description": "Various auxiliary nodes, continue to increase when there is free time",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/sleechengn/ComfyUI-TypeAux",
+      "publisher": "Der.L",
+      "name": "ComfyUI-TypeAux",
+      "tags": []
+    },
+    "basic_data_handling": {
+      "downloads": 3995,
+      "description": "NOTE: Still in development! Expect breaking changes!\n\nBasic Python functions for manipulating data that every programmer is used to.\nComprehensive node collection for data manipulation in ComfyUI workflows.\n\nSupported data types:\n- ComfyUI native: BOOLEAN, FLOAT, INT, STRING, and data lists\n- Python types as custom data types: DICT, LIST, SET\n\nFeature categories:\n- Boolean logic operations (and, or, not, xor, nand, nor)\n- Type casting/conversion between all supported data types\n- Comparison operations (equality, numerical comparison, range checking)\n- Data structures manipulation (data lists, LIST, DICT, SET)\n- Flow control (conditionals, branching, execution order)\n- Mathematical operations (arithmetic, trigonometry, logarithmic functions)\n- String manipulation (case conversion, formatting, splitting, validation)\n- File system path handling (path operations, information, searching)\n- SET operations (creation, modification, comparison, mathematical set theory)\n\nAll nodes are lightweight with no additional dependencies required.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/StableLlama/ComfyUI-basic_data_handling",
+      "publisher": "StableLlama",
+      "name": "Basic data handling",
+      "tags": []
+    },
+    "comfyui_stringessentials": {
+      "downloads": 5003,
+      "description": "Simple string manipulation nodes for ComfyUI (strip/remove text strings, search and replace text strings, preview modified string outputs). Useful for modifying text prompts or results from LLM outputs. Nodes will be located under standard Add Node > utils menu. Node names: String Textbox, String Strip, String Replace, and String Preview.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/bradsec/ComfyUI_StringEssentials",
+      "publisher": "bradsec",
+      "name": "ComfyUI_StringEssentials",
+      "tags": []
+    },
+    "comfuinoda-Navyblue": {
+      "downloads": 675,
+      "description": "the LyingSigmaSampler is a very useful node, as many users find it difficult to understand complex parameters. For these users, they might only need a simple, lightweight, and easy-to-use node. However, I have observed that LyingSigmaSampler does not control the noise mask smoothly enough, or in other words, it cannot control it more precisely. LyingSigmaSampler has a great advantage, of course, other nodes are also great. They can be applied to most models, including SD3.5, and they work well, which is a challenge for users because they have to deal with different noise masks. Therefore, I have added smoothing processing to LyingSigmaSampler in the hope of helping more people.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/tatookan/comfuinoda-Navyblue",
+      "publisher": "tatookan",
+      "name": "comfuinoda-Navyblue",
+      "tags": []
+    },
+    "comfyui-kynode": {
+      "downloads": 9861,
+      "description": "NODES:Advanced Lying Sigma Sampler, Save Image To target Path",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/yorkane/ComfyUI-KYNode",
+      "publisher": "KeivnYuan",
+      "name": "ComfyUI-KYNode",
+      "tags": []
+    },
+    "birefnet_universal": {
+      "downloads": 1972,
+      "description": "A comprehensive node package that seamlessly integrates all BiRefNet series models into ComfyUI",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/moon7star9/ComfyUI_BiRefNet_Universal",
+      "publisher": "moon7star9",
+      "name": "ComfyUI_BiRefNet_Universal",
+      "tags": []
+    },
+    "kaytool": {
+      "downloads": 14213,
+      "description": "KayTool boosts ComfyUI workflow efficiency with powerful tools like: image processing (resize, color, blur, expand, merge, crop), background/mask tasks via BiRefNet/RemBG, wireless data transfer (Set&Get), AI translation (Tencent/Baidu), Professional high-precision resource monitoring, dynamic math operations, flexible text handling, precision sliders, metadata/color profile-supported image saving, batch processing via folder loading, canvas node map export as PNG with metadata, quick Run options via right-click, node alignment toolbar with custom styles, and custom ComfyUI logo integration.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/kk8bit/KayTool",
+      "publisher": "kk8bit",
+      "name": "KayTool",
+      "tags": []
+    },
+    "comfyui_ben_ll": {
+      "downloads": 2014,
+      "description": "Background removal based on BEN. NODES:LoadRembgByBenModel, RembgByBen, GetMaskByBen, RembgByBenAdvanced, BlurFusionForegroundEstimation.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/lldacing/ComfyUI_BEN_ll",
+      "publisher": "lldacing",
+      "name": "ComfyUI_BEN_ll",
+      "tags": []
+    },
+    "comfyui_birefnet_ll": {
+      "downloads": 60448,
+      "description": "Sync with version of BiRefNet. NODES:AutoDownloadBiRefNetModel, LoadRembgByBiRefNetModel, RembgByBiRefNet, RembgByBiRefNetAdvanced, GetMaskByBiRefNet, BlurFusionForegroundEstimation.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/lldacing/ComfyUI_BiRefNet_ll",
+      "publisher": "lldacing",
+      "name": "ComfyUI_BiRefNet_ll",
+      "tags": []
+    },
+    "comfyui-seamless-tiling": {
+      "downloads": 11222,
+      "description": "Node for generating seamless textures, based on similar setting from A1111.",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/spinagon/ComfyUI-seamless-tiling",
+      "publisher": "spinagon",
+      "name": "ComfyUI-seamless-tiling",
+      "tags": []
+    },
+    "comfyui_jags_vectormagic": {
+      "downloads": 4942,
+      "description": "ComfyUI_Jags_VectorMagic  A collection of nodes to explore Vector and image manipulation",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/jags111/ComfyUI_Jags_VectorMagic",
+      "publisher": "jags111",
+      "name": "ComfyUI_Jags_VectorMagic",
+      "tags": []
+    },
+    "comfyui-loadimage-advanced": {
+      "downloads": 2242,
+      "description": "This is a node that simply integrates LoadImage, Vae Encode, Upscale, Resolution factor correction, and Color Adjustment.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/souki202/ComfyUI-LoadImage-Advanced",
+      "publisher": "Totori",
+      "name": "ComfyUI-LoadImage-Advanced",
+      "tags": []
+    },
+    "comfyui_lg_tools": {
+      "downloads": 369,
+      "description": "This is a toolset designed for ComfyUI by LAOGOU-666, providing a series of practical image processing and operation nodes, making our operation more intuitive and convenient",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/LAOGOU-666/Comfyui_LG_Tools",
+      "publisher": "LAOGOU-666",
+      "name": "Comfyui_LG_Tools",
+      "tags": []
+    },
+    "comfyui-art-venture": {
+      "downloads": 163727,
+      "description": "A comprehensive set of custom nodes for ComfyUI, focusing on utilities for image processing, JSON manipulation, model operations and working with object via URLs",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/sipherxyz/comfyui-art-venture",
+      "publisher": "ArtVenture",
+      "name": "ComfyUI ArtVenture",
+      "tags": []
+    },
+    "comfyui-deforum": {
+      "downloads": 114,
+      "description": "Custom nodes for deforum workflows",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/deforum-art/deforum-comfy-nodes",
+      "publisher": "deforum",
+      "name": "ComfyUI-Deforum",
+      "tags": []
+    },
+    "comfyui-logic": {
+      "downloads": 59406,
+      "description": "An extension to ComfyUI that introduces logic nodes and conditional rendering capabilities.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/theUpsider/ComfyUI-Logic",
+      "publisher": "theupsider",
+      "name": "ComfyUI-Logic",
+      "tags": []
+    },
+    "comfyui-depth-visualization": {
+      "downloads": 1707,
+      "description": "",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/gokayfem/ComfyUI-Depth-Visualization",
+      "publisher": "gokayfem",
+      "name": "ComfyUI-Depth-Visualization",
+      "tags": []
+    },
+    "comfyui-mixlab-nodes": {
+      "downloads": 129680,
+      "description": "3D, ScreenShareNode & FloatingVideoNode, SpeechRecognition & SpeechSynthesis, GPT, LoadImagesFromLocal, Layers, Other Nodes, ...",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/shadowcz007/comfyui-mixlab-nodes",
+      "publisher": "shadow",
+      "name": "comfyui-mixlab-nodes",
+      "tags": []
+    },
+    "comfy-ui-lora-dataset-tools": {
+      "downloads": 1022,
+      "description": "Quality of life nodes to organize a Lora Training Dataset.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/svdC1/comfy-ui-lora-dataset-tools",
+      "publisher": "svdc",
+      "name": "comfy-ui-lora-dataset-tools",
+      "tags": []
+    },
+    "comfyui_facesimilarity": {
+      "downloads": 2566,
+      "description": "",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/chflame163/ComfyUI_FaceSimilarity",
+      "publisher": "chflame163",
+      "name": "ComfyUI_FaceSimilarity",
+      "tags": []
+    },
+    "comfyui_nyjy": {
+      "downloads": 5783,
+      "description": "A comfyui node that provides translation and image reverse push functions(JoyTag & JoyCaption).",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/aidenli/ComfyUI_NYJY",
+      "publisher": "aidenli",
+      "name": "ComfyUI_NYJY",
+      "tags": []
+    },
+    "comfyui_creepy_nodes": {
+      "downloads": 1858,
+      "description": "A collection of switch nodes, dynamic nodes, evaluation nodes, translation node and some other specialized nodes.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/Creepybits/ComfyUI-Creepy_nodes",
+      "publisher": "creepybits",
+      "name": "Creepy_nodes",
+      "tags": []
+    },
+    "ai_text_comfyui": {
+      "downloads": 18,
+      "description": "AI_Text_Comfyui is a custom node for ComfyUI that connects to the OpenAI Chat API and automatically generates creative text prompts for AI workflows. This simplified version removes external dependencies like dotenv, requiring the OpenAI key to be set using a system environment variable.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/Zch6111/AI_Text_Comfyui",
+      "publisher": "Navi",
+      "name": "AI_Text_Comfyui",
+      "tags": []
+    },
+    "comfy-gemini": {
+      "downloads": 131,
+      "description": "Use gemini to describe images, enhance prompts, etc.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/abdelrahman-habib/comfy-gemini",
+      "publisher": "Thom Forke",
+      "name": "Comfy Gemini",
+      "tags": []
+    },
+    "comfyui-if_llm": {
+      "downloads": 8613,
+      "description": "Run Local and API LLMs, Features Gemini2 image generation, DEEPSEEK R1, QwenVL2.5, QWQ32B, Ollama, LlamaCPP LMstudio, Koboldcpp, TextGen, Transformers or via APIs Anthropic, Groq, OpenAI, Google Gemini, Mistral, xAI and create your own charcters assistants (SystemPrompts) with custom presets and muchmore",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/if-ai/ComfyUI-IF_LLM",
+      "publisher": "impactframes",
+      "name": "IF_LLM",
+      "tags": []
+    },
+    "comfyui_soze": {
+      "downloads": 16728,
+      "description": "Soze Nodes: Quality of Life, Batch Processing and Useful Abandoned Repo Nodes",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/SozeInc/ComfyUI_Soze",
+      "publisher": "Mike Soze",
+      "name": "ComfyUI_Soze",
+      "tags": []
+    },
+    "efficiency-nodes-comfyui": {
+      "downloads": 202028,
+      "description": "Efficiency Nodes for ComfyUI Version 2.0 A collection of ComfyUI custom nodes to help streamline workflows and reduce total node count.",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/jags111/efficiency-nodes-comfyui",
+      "publisher": "jags111",
+      "name": "efficiency-nodes-comfyui",
+      "tags": []
+    },
+    "batchimg-rembg-comfyui-nodes": {
+      "downloads": 6742,
+      "description": "",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/Mamaaaamooooo/batchImg-rembg-ComfyUI-nodes",
+      "publisher": "Mamaaaamooooo",
+      "name": "batchImg-rembg-ComfyUI-nodes",
+      "tags": []
+    },
+    "wtq-rembg-comfyui-node": {
+      "downloads": 848,
+      "description": "This custom node is based on the [a/rembg-comfyui-node](https://github.com/Jcd1230/rembg-comfyui-node) but provides additional functionality to select ONNX models.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/waytooquick/wtq-rembg-comfyui-node",
+      "publisher": "wtq",
+      "name": "wtq-rembg-comfyui-node",
+      "tags": []
+    },
+    "ComfyUI-Apt_Preset": {
+      "downloads": 41237,
+      "description": "ComfyUI Preset Manager, supporting various preset templates and workflow management",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/cardenluo/ComfyUI-Apt_Preset.git",
+      "publisher": "ComfyUI-Apt_Preset",
+      "name": "ComfyUI-Apt_Preset",
+      "tags": []
+    },
+    "comfyui_kimnodes": {
+      "downloads": 5932,
+      "description": "ComfyUI node collection: icon layout & processing, YOLO intelligent cropping, image filters & enhancement, text processing tools, metadata management, mask handling and image classification in one comprehensive toolbox.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/wjl0313/ComfyUI_KimNodes",
+      "publisher": "ComfyUI_KimNodes",
+      "name": "ComfyUI_KimNodes",
+      "tags": []
+    },
+    "comfyui-ollama-describer": {
+      "downloads": 5624,
+      "description": "This is an extension for ComfyUI that makes it possible to use some LLM models provided by Ollama, such as Gemma, Llava (multimodal), Llama2, Llama3 or Mistral. Speaking specifically of the LLaVa - Large Language and Vision Assistant model, although trained on a relatively small dataset, it demonstrates exceptional capabilities in understanding images and answering questions about them. This model presents similar behaviors to multimodal models such as GPT-4, even when presented with invisible images and instructions.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/alisson-anjos/ComfyUI-Ollama-Describer",
+      "publisher": "AlissonAnjos",
+      "name": "ComfyUI-Ollama-Describer",
+      "tags": []
+    },
+    "diffusion360_comfyui": {
+      "downloads": 1623,
+      "description": "Generating seamless 360 degree panoramic image through text or perspective image.",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/ArcherFMY/Diffusion360_ComfyUI",
+      "publisher": "mengyang feng",
+      "name": "Diffusion360_ComfyUI",
+      "tags": []
+    },
+    "comfyui-mosaica": {
+      "downloads": 1176,
+      "description": "Create colorful mosaic images in ComfyUI by computing label images and applying lookup tables.",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/Mason-McGough/ComfyUI-Mosaica",
+      "publisher": "Mason McGough",
+      "name": "ComfyUI-Mosaica",
+      "tags": []
+    },
+    "spectral": {
+      "downloads": 707,
+      "description": "ComfyUI Spectral is a ComfyUI custom nodes library based on the spectral, mainly used for visual processing of spectral files",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/chenlongming/ComfyUI_Spectral",
+      "publisher": "ghost94",
+      "name": "ComfyUI_Spectral",
+      "tags": []
+    },
+    "comfyui-lora-manager": {
+      "downloads": 20993,
+      "description": "LoRA Manager for ComfyUI - Access it at http://localhost:8188/loras for managing LoRA models with previews and metadata integration.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/willmiao/ComfyUI-Lora-Manager",
+      "publisher": "Will Miao",
+      "name": "ComfyUI-Lora-Manager",
+      "tags": []
+    },
+    "diffusers-in-comfyui": {
+      "downloads": 2836,
+      "description": "A collection of ComfyUI custom nodes that allow to use most Diffusers pipelines and components in Comfy(such as Txt2Img, Img2Img, Inpainting, LoRAS, B-LoRAS, ControlNet...). You will find them under 'Diffusers-in-Comfy'!",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/maepopi/Diffusers-in-ComfyUI",
+      "publisher": "DrJusseaux",
+      "name": "Diffusers-in-ComfyUI",
+      "tags": []
+    },
+    "comfyui-videoplayer": {
+      "downloads": 1524,
+      "description": "A silly POC Video Player for ComfyUI",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/BetaDoggo/ComfyUI-VideoPlayer",
+      "publisher": "BetaDoggo",
+      "name": "ComfyUI-VideoPlayer",
+      "tags": []
+    },
+    "comfywarp": {
+      "downloads": 1659,
+      "description": "WarpFusion workflow wrapper for ComfyUI",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/Sxela/ComfyWarp",
+      "publisher": "Alex Spirin",
+      "name": "ComfyWarp",
+      "tags": []
+    },
+    "comfyui_wordcloud": {
+      "downloads": 2881,
+      "description": "Nodes:Word Cloud, Load Text File",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/chflame163/ComfyUI_WordCloud",
+      "publisher": "chflame163",
+      "name": "ComfyUI_WordCloud",
+      "tags": []
+    },
+    "comfyui-kjnodes": {
+      "downloads": 571051,
+      "description": "Various quality of life -nodes for ComfyUI, mostly just visual stuff to improve usability.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/kijai/ComfyUI-KJNodes",
+      "publisher": "Kijai",
+      "name": "ComfyUI-KJNodes",
+      "tags": []
+    },
+    "makkitools": {
+      "downloads": 88,
+      "description": "",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/MakkiShizu/ComfyUI-MakkiTools",
+      "publisher": "Makki_Shizu",
+      "name": "ComfyUI-MakkiTools",
+      "tags": []
+    },
+    "comfyui_dagthomas": {
+      "downloads": 5406,
+      "description": "Easy prompting for generation of endless random art pieces and photographs!",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/dagthomas/comfyui_dagthomas",
+      "publisher": "dagthomas",
+      "name": "comfyui_dagthomas",
+      "tags": []
+    },
+    "llm-toolkit": {
+      "downloads": 404,
+      "description": "A custom node collection for integrating various LLM (Large Language Model) providers with ComfyUI.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/comfy-deploy/comfyui-llm-toolkit",
+      "publisher": "ComfyDeploy",
+      "name": "comfyui-llm-toolkit",
+      "tags": []
+    },
+    "promptmanager": {
+      "downloads": 251,
+      "description": "A powerful ComfyUI custom node that extends the standard text encoder with persistent prompt storage, advanced search capabilities, and an automatic image gallery system using SQLite.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/ComfyAssets/ComfyUI_PromptManager",
+      "publisher": "kiko",
+      "name": "ComfyUI_PromptManager",
+      "tags": []
+    },
+    "comfyui_lg_groupexecutor": {
+      "downloads": 1264,
+      "description": "A ComfyUI extension for controlling and managing node group execution flow. Features include single/multiple group execution, delay control, signal chaining, and execution list repetition processing.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/LAOGOU-666/Comfyui-LG_GroupExecutor",
+      "publisher": "LAOGOU-666",
+      "name": "Comfyui-LG_GroupExecutor",
+      "tags": []
+    },
+    "comfyui_memory_cleanup": {
+      "downloads": 4781,
+      "description": "A ComfyUI extension that provides nodes for memory cleanup, including VRAM and RAM cleanup functions to optimize ComfyUI performance during long running workflows.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/LAOGOU-666/Comfyui-Memory_Cleanup",
+      "publisher": "LAOGOU-666",
+      "name": "Comfyui-Memory_Cleanup",
+      "tags": []
+    },
+    "comfyui-logicutils": {
+      "downloads": 89646,
+      "description": "Logical Utils (compare, string, boolean operations) for ComfyUI",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/aria1th/ComfyUI-LogicUtils",
+      "publisher": "angelbottomless",
+      "name": "ComfyUI-LogicUtils",
+      "tags": []
+    },
+    "comfyui_realtimenodes": {
+      "downloads": 1570,
+      "description": "These nodes are for real-time applications of ComfyUI.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/ryanontheinside/ComfyUI_RealTimeNodes",
+      "publisher": "ryanontheinside",
+      "name": "ComfyUI_RealTimeNodes",
+      "tags": []
+    },
+    "comfystream": {
+      "downloads": 426,
+      "description": "Build Live AI Video with ComfyUI",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "",
+      "publisher": "Livepeer Comfystream",
+      "name": "ComfyStream",
+      "tags": []
+    },
+    "comfyui_jags_audiotools": {
+      "downloads": 2084,
+      "description": "ComfyUI_Jags_Audiotools\ud83c\udf99\ufe0fA collection amazing audio tools for working with audio and sound files in comfyUI",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/jags111/ComfyUI_Jags_Audiotools",
+      "publisher": "jags111",
+      "name": "ComfyUI_Jags_Audiotools",
+      "tags": []
+    },
+    "comfyui-workflow-encrypt": {
+      "downloads": 2375,
+      "description": "Encrypt your comfyui workflow, and share it with key",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/jtydhr88/ComfyUI-Workflow-Encrypt",
+      "publisher": "Terry Jia",
+      "name": "ComfyUI-Workflow-Encrypt",
+      "tags": []
+    },
+    "comfyui_fearnworksnodes": {
+      "downloads": 2129,
+      "description": "This extension provides various nodes to support multimodal workflows.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/fearnworks/ComfyUI_FearnworksNodes",
+      "publisher": "fearnworks",
+      "name": "Fearnworks Nodes",
+      "tags": []
+    },
+    "comfyui-saveimagewithmetadata": {
+      "downloads": 24818,
+      "description": "Add a node to save images with metadata (PNGInfo) extracted from the input values of each node.\nSince the values are extracted dynamically, values output by various extension nodes can be added to metadata.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/nkchocoai/ComfyUI-SaveImageWithMetaData",
+      "publisher": "nk choco",
+      "name": "ComfyUI-SaveImageWithMetaData",
+      "tags": []
+    },
+    "comfyui_image_metadata_extension": {
+      "downloads": 3602,
+      "description": "Custom node for ComfyUI. It adds additional metadata for saved images, ensuring compatibility with the Civitai website.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/edelvarden/comfyui_image_metadata_extension",
+      "publisher": "edelvarden",
+      "name": "comfyui_image_metadata_extension",
+      "tags": []
+    },
+    "comfys3": {
+      "downloads": 1999,
+      "description": "ComfyS3 seamlessly integrates with [a/Amazon S3](https://aws.amazon.com/en/s3/) in ComfyUI. This open-source project provides custom nodes for effortless loading and saving of images, videos, and checkpoint models directly from S3 buckets within the ComfyUI graph interface.",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/TemryL/ComfyS3",
+      "publisher": "TemryL",
+      "name": "ComfyS3",
+      "tags": []
+    },
+    "secureapicall": {
+      "downloads": 921,
+      "description": "This package provides custom nodes to ComfyUI to POST data to a secure API.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/Mattabyte/ComfyUI-SecureApiCall",
+      "publisher": "MattaByte",
+      "name": "ComfyUI-SecureApiCall",
+      "tags": []
+    },
+    "comfyui-edgetts": {
+      "downloads": 2988,
+      "description": "ComfyUI-EdgeTTS is a powerful text-to-speech node for ComfyUI, leveraging Microsoft's Edge TTS capabilities. It enables seamless conversion of text into natural-sounding speech, supporting multiple languages and voices. Ideal for enhancing user interactions, this node is easy to integrate and customize, making it perfect for various applications.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/1038lab/ComfyUI-EdgeTTS",
+      "publisher": "AILab",
+      "name": "ComfyUI-EdgeTTS",
+      "tags": []
+    },
+    "comfyui-kokorotts": {
+      "downloads": 704,
+      "description": "ComfyUI-KokoroTTS is a powerful text-to-speech node for ComfyUI. It leverages the KokoroTTS to convert text into natural-sounding speech, supporting multiple languages.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/1038lab/ComfyUI-KokoroTTS",
+      "publisher": "AILab",
+      "name": "ComfyUI-KokoroTTS",
+      "tags": []
+    },
+    "comfyui-funaudiollm": {
+      "downloads": 1958,
+      "description": "Comfyui custom node for [FunAudioLLM](https://funaudiollm.github.io/) include [CosyVoice](https://github.com/FunAudioLLM/CosyVoice) and [SenseVoice](https://github.com/FunAudioLLM/SenseVoice).",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/SpenserCai/ComfyUI-FunAudioLLM",
+      "publisher": "SpenserCai",
+      "name": "ComfyUI-FunAudioLLM",
+      "tags": []
+    },
+    "comfyui_api_tools": {
+      "downloads": 1506,
+      "description": "Add some extra endpoints to ComfyUI to manage / monitor remotely.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/brantje/ComfyUI-api-tools",
+      "publisher": "",
+      "name": "ComfyUI Api Tools",
+      "tags": []
+    },
+    "comfyui_extra_api": {
+      "downloads": 2799,
+      "description": "Add more endpoints to make easy for utilizing ComfyUI API",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/injet-zhou/comfyui_extra_api",
+      "publisher": "Injet Zhou",
+      "name": "ComfyUI Extra API",
+      "tags": []
+    },
+    "comfyui_bmad_nodes": {
+      "downloads": 2257,
+      "description": "This custom node offers the following functionalities: API support for setting up API requests, computer vision primarily for masking or collages, and general utility to streamline workflow setup or implement essential missing features.",
+      "author": "Unknown",
+      "status": "",
+      "repository": "https://github.com/bmad4ever/comfyui_bmad_nodes",
+      "publisher": "bmad",
+      "name": "comfyui_bmad_nodes",
+      "tags": []
+    },
+    "comfyui-dickson-nodes": {
+      "downloads": 3361,
+      "description": "A set of custom nodes that I've either written myself or adapted from other authors",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/dicksondickson/ComfyUI-Dickson-Nodes",
+      "publisher": "dicksondickson",
+      "name": "ComfyUI-Dickson-Nodes",
+      "tags": []
+    },
+    "comfyui_ttp_toolset": {
+      "downloads": 77592,
+      "description": "This is a workflow for my simple logic amazing upscale node for DIT model. it can be common use for Flux,Hunyuan,SD3 It can simple tile the initial image into pieces and then use image-interrogator to get each tile prompts for more accurate upscale process. The condition will be properly handled and the hallucination will be significantly eliminated.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/TTPlanetPig/Comfyui_TTP_Toolset",
+      "publisher": "TTPlanet",
+      "name": "Comfyui_TTP_Toolset",
+      "tags": []
+    },
+    "comfyui_snacknodes": {
+      "downloads": 1399,
+      "description": "A comprehensive collection of ComfyUI nodes designed to reduce reliance on multiple third-party node packages.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/linksluckytime/comfyui_snacknodes",
+      "publisher": "linksluckytime",
+      "name": "comfyui_snacknodes",
+      "tags": []
+    },
+    "easyanimate": {
+      "downloads": 20645,
+      "description": "Video Generation Nodes for EasyAnimate, which suppors text-to-video, image-to-video, video-to-video and different controls.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/aigc-apps/EasyAnimate",
+      "publisher": "bubbliiiing",
+      "name": "EasyAnimate",
+      "tags": []
+    },
+    "animagine-prompt": {
+      "downloads": 978,
+      "description": "Comfy UI node to prompt build for https://huggingface.co/cagliostrolab/animagine-xl-4.0 model ",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/gmorks/ComfyUI-Animagine-Prompt",
+      "publisher": "Gmorks",
+      "name": "ComfyUI-Animagine-Prompt",
+      "tags": []
+    },
+    "videoclipgenerator": {
+      "downloads": 1402,
+      "description": "Vibe Music Engine is a custom node  that processes audio input using OpenAI\u2019s Whisper models. It provides transcription, translation, and precise word-level timing\u2014perfect for generating subtitles and edit decision lists (EDL) for video editing workflows. In addition, it features beat detection to synchronize video cuts with the music rhythm. You can generate full-lenght video based on song words with Automatic prompting the img2video i2v or text2video.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/lazniak/videoclipgenerator",
+      "publisher": "PabloGFX",
+      "name": "VideoClipGenerator - by PabloGFX",
+      "tags": []
+    },
+    "comfyui-weightedrandomchoice": {
+      "downloads": 209,
+      "description": "A node for ComfyUI that picks from `input_a` and `input_b` based on the given `chance`.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/SparknightLLC/ComfyUI-WeightedRandomChoice",
+      "publisher": "Sparknight",
+      "name": "ComfyUI-WeightedRandomChoice",
+      "tags": []
+    },
+    "comfyui-googletrans": {
+      "downloads": 2604,
+      "description": "NODES:Google Translate",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/sweetndata/ComfyUI-googletrans",
+      "publisher": "Sweetndata",
+      "name": "ComfyUI-googletrans",
+      "tags": []
+    },
+    "google_moogle": {
+      "downloads": 634,
+      "description": "AGoogle Moogle is a Google Translator node for ComfyUI that provides easy-to-use text translation capabilities directly within your ComfyUI workflows.",
+      "author": "Unknown",
+      "status": "NodeStatusActive",
+      "repository": "https://github.com/ShmuelRonen/google_moogle",
+      "publisher": " Shmuel Ronen",
+      "name": "google_moogle",
       "tags": []
     }
   },

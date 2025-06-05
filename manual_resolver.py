@@ -13,10 +13,13 @@ class ManualResolver:
     def __init__(self):
         # Load existing data
         with open('unresolved_conflicts.json', 'r') as f:
-            self.unresolved_patterns = json.load(f)
+            all_patterns = json.load(f)
         
         with open('resolution-cache.json', 'r') as f:
             self.cache = json.load(f)
+        
+        # Filter out already resolved patterns
+        self.unresolved_patterns = self.filter_unresolved_patterns(all_patterns)
         
         self.new_claimed_nodes = {}
         self.new_priority_changes = {}
@@ -30,6 +33,37 @@ class ManualResolver:
         # Stats
         self.resolved_patterns = 0
         self.total_nodes_resolved = 0
+        self.resolved_in_session = []  # Track patterns resolved in this session
+    
+    def filter_unresolved_patterns(self, all_patterns: List[Dict]) -> List[Dict]:
+        """Filter out patterns that have already been resolved"""
+        unresolved = []
+        claimed_nodes = self.cache.get('claimed_node_names', {})
+        priority_changes = self.cache.get('search_priority_changes', {})
+        
+        for pattern in all_patterns:
+            # Check if this pattern has been resolved
+            pattern_resolved = False
+            
+            # Check if any nodes from this pattern have been claimed
+            for record in pattern['records']:
+                if record['name'] in claimed_nodes:
+                    pattern_resolved = True
+                    break
+            
+            # Check if any packages in this pattern have priority changes
+            if not pattern_resolved:
+                node_ids = [nid.strip() for nid in pattern['node_ids'].split(',')]
+                for node_id in node_ids:
+                    if node_id in priority_changes:
+                        pattern_resolved = True
+                        break
+            
+            if not pattern_resolved:
+                unresolved.append(pattern)
+        
+        print(f"Filtered {len(all_patterns) - len(unresolved)} already resolved patterns")
+        return unresolved
     
     def get_package_info(self, node_id: str) -> Dict:
         """Get package information from API using /nodes/{nodeId} endpoint"""
@@ -152,6 +186,7 @@ class ManualResolver:
                             
                             self.resolved_patterns += 1
                             self.total_nodes_resolved += pattern['conflict_count']
+                            self.resolved_in_session.append(pattern)
                             return True
                         else:
                             print(f"Invalid choice. Enter 1-{len(node_ids)}")
@@ -184,6 +219,7 @@ class ManualResolver:
                                         
                                         self.resolved_patterns += 1
                                         self.total_nodes_resolved += pattern['conflict_count']
+                                        self.resolved_in_session.append(pattern)
                                         return True
                                     else:
                                         print(f"Priority should be 6-10")
@@ -205,18 +241,24 @@ class ManualResolver:
             else:
                 print(f"Invalid choice. Enter 1-4")
     
-    def resolve_largest_conflicts(self, limit: int = 10):
+    def resolve_largest_conflicts(self, limit: int = None):
         """Resolve the largest conflict patterns interactively"""
         print(f"=== Manual Conflict Resolver ===")
         print(f"Total unresolved patterns: {len(self.unresolved_patterns)}")
-        print(f"Will process up to {limit} largest conflicts")
+        if limit:
+            print(f"Will process up to {limit} largest conflicts")
+        else:
+            print(f"Will process ALL unresolved conflicts")
         
         # Sort by conflict count descending
         sorted_patterns = sorted(self.unresolved_patterns, 
                                key=lambda x: x['conflict_count'], reverse=True)
         
-        for i, pattern in enumerate(sorted_patterns[:limit]):
-            print(f"\n[{i+1}/{min(limit, len(sorted_patterns))}] Processing pattern...")
+        patterns_to_process = sorted_patterns[:limit] if limit else sorted_patterns
+        total_to_process = len(patterns_to_process)
+        
+        for i, pattern in enumerate(patterns_to_process):
+            print(f"\n[{i+1}/{total_to_process}] Processing pattern...")
             
             result = self.resolve_pattern(pattern)
             
@@ -228,7 +270,7 @@ class ManualResolver:
                 print(f"💾 Progress saved")
             
             # Ask if user wants to continue
-            if i < min(limit, len(sorted_patterns)) - 1:
+            if i < total_to_process - 1:
                 continue_choice = input(f"\nContinue to next conflict? [y/n]: ").strip().lower()
                 if continue_choice != 'y':
                     break
@@ -245,6 +287,25 @@ class ManualResolver:
         # Save cache
         with open('resolution-cache.json', 'w') as f:
             json.dump(self.cache, f, indent=2)
+        
+        # Update unresolved conflicts file by removing resolved patterns
+        if self.resolved_in_session:
+            # Re-read the original file to get all patterns
+            with open('unresolved_conflicts.json', 'r') as f:
+                all_patterns = json.load(f)
+            
+            # Remove resolved patterns from the list
+            resolved_node_ids_sets = set()
+            for pattern in self.resolved_in_session:
+                resolved_node_ids_sets.add(pattern['node_ids'])
+            
+            updated_patterns = [p for p in all_patterns if p['node_ids'] not in resolved_node_ids_sets]
+            
+            # Save updated file
+            with open('unresolved_conflicts.json', 'w') as f:
+                json.dump(updated_patterns, f, indent=2)
+            
+            print(f"Removed {len(self.resolved_in_session)} resolved patterns from unresolved_conflicts.json")
     
     def print_summary(self):
         """Print resolution summary"""
@@ -272,8 +333,8 @@ def main():
     resolver = ManualResolver()
     
     try:
-        # Process up to 15 largest conflicts
-        resolver.resolve_largest_conflicts(limit=15)
+        # Process ALL largest conflicts
+        resolver.resolve_largest_conflicts()
     except KeyboardInterrupt:
         print(f"\n\n⚠️  Interrupted by user. Saving progress...")
         resolver.save_progress()
