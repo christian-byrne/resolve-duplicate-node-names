@@ -1,51 +1,53 @@
-# ComfyUI Node Duplicate Resolution Project
+# Technical Documentation - ComfyUI Node Duplicate Resolution
 
-This repository contains tools and data for identifying and resolving duplicate node names in the ComfyUI ecosystem.
+Internal technical documentation for the ComfyUI node duplicate resolution system.
 
-## Current Status
+## System Architecture
 
- **Data Collection Complete**
-- Downloaded 211MB of node data from production database
-- Identified 957 duplicate node names across different packages
-- Added 243 new duplicates to the existing dataset
+This system implements a two-phase resolution strategy:
+1. **Global Priority Adjustments** - Modify `search_priority` field to globally rerank packages
+2. **Specific Node Claims** - Insert into `preempted_node_names` to claim specific node names
 
- **Duplicate Detection**
-- Exact name matches across different node_ids
-- Results stored in `duplicate-node-names.json`
-- Sorted by number of conflicting packages (highest priority first)
+## Database Schema
 
-## Core Files
+### Tables Modified
+- `nodes.search_priority` - Controls package ranking (lower = higher priority)
+- `preempted_node_names` - Explicit node name ownership claims
 
-### Data Files
-- `duplicate-node-names.json` - Main database of all identified duplicates (957 entries)
-- `nodes_data.sql` - Local copy of relevant database tables (211MB)
-- `duplicate-resolution-results.json` - Resolution decisions and results
-- `resolution-cache.json` - Cached resolution decisions
+### Priority Scale
+- `5` - Default/highest priority (authoritative packages)
+- `6-8` - Lower priority (forks, alternatives)
+- `10` - Lowest priority (test packages, deprecated)
 
-### Analysis Scripts
-- `analyze_priority_impact.py` - Analyzes impact and priority of duplicates
-- `analyze_resolution_status.py` - Tracks resolution progress
-- `analyze_resolvable_duplicates.py` - Identifies automatically resolvable conflicts
-- `final_verification.py` - Verifies resolution results
-- `find_discrepancy.py` - Finds inconsistencies in data
+## Caching Strategy
 
-### Resolution Scripts
-- `resolution_engine.py` - Main resolution logic and algorithms
-- `manual_resolver.py` - Interactive manual resolution tool
-- `simple_resolver.py` - Basic automated resolution
-- `resolve_remaining.py` - Handles remaining unresolved conflicts
+### API Caching
+- All `api.comfy.org` calls cached in `resolution-cache.json`
+- Respects rate limits and reduces API load
+- Cache keys based on package ID and endpoint
 
-### Utilities
-- `download-db.sh` - Downloads node data from production database
-- `clear_bad_cache.py` - Cleans invalid cached resolutions
+### Resolution State Caching
+- Manual resolution decisions persist between sessions
+- Prevents re-asking same questions
+- Enables iterative refinement
 
-### Documentation
-- `process-raw-human-text.md` - Manual resolution guidance
-- `openapi.yml` - API specification for resolution services
+## Resolution Algorithms
 
-## Data Structure
+### Automatic Resolution Criteria
+1. **Download Threshold**: 3x difference in download counts
+2. **Package Type Priority**: Production > Fork > Test
+3. **Maintenance Status**: Active > Archived
+4. **Recency**: Recent updates preferred
 
-Each duplicate entry contains:
+### Manual Resolution Heuristics
+- Community adoption patterns
+- Code quality indicators
+- Documentation completeness
+- Developer reputation metrics
+
+## Data Processing Pipeline
+
+### Input: `duplicate-node-names.json`
 ```json
 {
   "name": "NodeName",
@@ -55,17 +57,112 @@ Each duplicate entry contains:
 }
 ```
 
-## Usage
+### Output: `duplicate-resolution-queries.sql`
+```sql
+-- Priority updates
+UPDATE nodes SET search_priority = 10 WHERE id = 'test-package';
 
-1. **Download latest data**: `./download-db.sh`
-2. **Analyze duplicates**: `python analyze_priority_impact.py`
-3. **Resolve conflicts**: `python resolution_engine.py`
-4. **Verify results**: `python final_verification.py`
+-- Node claims  
+INSERT INTO preempted_node_names (node_name, node_id) VALUES ('SaveText', 'authoritative-package');
+```
 
-## Commands
+## Error Handling
+
+### Common Issues
+- **API Rate Limits**: Cached responses prevent repeated failures
+- **Invalid Package IDs**: Validation checks before processing
+- **Conflicting Resolutions**: Manual override capabilities
+
+### Recovery Mechanisms
+- `clear_bad_cache.py` - Reset corrupted cache data
+- `find_discrepancy.py` - Identify data inconsistencies
+- Rollback SQL provided for all changes
+
+## Performance Optimizations
+
+### Database Query Optimization
+- Targeted table downloads (nodes, comfy_nodes, node_versions only)
+- Efficient duplicate detection using EXISTS clauses
+- Bulk operations for priority updates
+
+### Memory Management
+- Streaming JSON processing for large datasets
+- Lazy loading of package metadata
+- Garbage collection after processing phases
+
+## Development Workflow
+
+### Testing Resolution Logic
+```bash
+# Test with small subset
+python resolution_engine.py --limit 10
+
+# Verify specific conflicts
+python final_verification.py --verbose
+
+# Check cache consistency
+python clear_bad_cache.py --dry-run
+```
+
+### Debugging Tools
+- Verbose logging in all scripts
+- JSON pretty-printing for readability
+- Step-by-step resolution tracing
+
+## Deployment Considerations
+
+### Pre-deployment Checklist
+1. Verify SQL syntax with `--dry-run` flags
+2. Check resolution counts match expectations
+3. Review high-impact priority changes
+4. Validate node claim uniqueness
+
+### Rollback Procedures
+- All SQL changes include rollback statements
+- Priority changes reversible via backup values
+- Node claims removable via DELETE statements
+
+## Monitoring & Metrics
+
+### Success Metrics
+- Resolution rate (currently 65%)
+- Conflict reduction over time
+- User satisfaction scores
+
+### Alert Conditions
+- Resolution rate drops below 50%
+- Cache corruption detected
+- API failures exceed threshold
+
+## Integration Points
+
+### External APIs
+- `api.comfy.org` - Package metadata and download counts
+- GitHub API - Repository information and activity
+- Supabase API - Production database access
+
+### Internal Systems
+- ComfyUI search indexing
+- Package recommendation engine
+- User interface conflict detection
+
+## Maintenance Tasks
+
+### Regular Maintenance
+- Weekly data refresh via `download-db.sh`
+- Monthly resolution review and cleanup
+- Quarterly algorithm tuning based on results
+
+### Cache Management
+- Cache expires after 7 days
+- Manual cache clearing for corrupted data
+- Backup cache before major updates
+
+## Commands for Development
 
 - Run linting: `python -m flake8 .` (if configured)
 - Run tests: `python -m pytest .` (if configured)
+- Type checking: `mypy *.py` (if configured)
 
 ## Environment Variables
 
