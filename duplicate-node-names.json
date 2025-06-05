@@ -780,6 +780,18 @@
     "node_ids": "comfyui_met_suit,comfyui_met_suite"
   },
   {
+    "name": "BLIP Analyze Image",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "BLIP Model Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "BatchCount+",
     "distinct_node_count": 2,
     "total_record_count": 5,
@@ -810,6 +822,126 @@
     "node_ids": "bilbox-comfyui,ruben-bilbox-comfyui"
   },
   {
+    "name": "BillBum_Modified_Base64_Url2Data_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_Base64_Url2Img_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_Dalle_API_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_DropoutToken_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_Flux_API_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_Flux_API_with_imgInput",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_GPTImage1_API_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_Ideogram_API_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_ImageSplit_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_Image_API_Call_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_LLM_API_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_LLM_ForceStream_Mode",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_Recraft_API_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_RegText_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_SD3_API_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_Structured_LLM_Node(Imperfect)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_VisionLM_API_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_Modified_img2b64_url_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "BillBum_NonSysPrompt_VLM_API_Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "Blend Latents",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "Blur",
     "distinct_node_count": 2,
     "total_record_count": 8,
@@ -820,6 +952,12 @@
     "distinct_node_count": 2,
     "total_record_count": 8,
     "node_ids": "comfyui_ben_ll,comfyui_birefnet_ll"
+  },
+  {
+    "name": "Boolean To Text",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "BooleanFromPipe",
@@ -834,16 +972,88 @@
     "node_ids": "ComfyUI_KurtHokke-Nodes,ComfyUI_KurtHokke_Nodes"
   },
   {
+    "name": "Bounded Image Blend",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Bounded Image Blend with Mask",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Bounded Image Crop",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Bounded Image Crop with Mask",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Bus Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "CLIP Input Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "CLIP Vision Input Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "CLIPLoaderGGUF",
     "distinct_node_count": 2,
     "total_record_count": 2,
     "node_ids": "ComfyUI-GGUF,ComfyUI-GGUF_Forked"
   },
   {
+    "name": "CLIPSEG2",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "CLIPSeg Batch Masking",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "CLIPSeg Masking",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "CLIPSeg Model Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "CLIPSlider",
     "distinct_node_count": 2,
     "total_record_count": 2,
     "node_ids": "comfyui-clipslider,comfyui-clipslider-sc"
+  },
+  {
+    "name": "CLIPTextEncode (NSP)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "CLIPTextEncodeSDXL+",
@@ -882,10 +1092,28 @@
     "node_ids": "comfyui-hunyan3dwrapper,comfyui-videonoisewarp"
   },
   {
+    "name": "Cache Node",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "ChainTextEncode",
     "distinct_node_count": 2,
     "total_record_count": 2,
     "node_ids": "ComfyUI_KurtHokke-Nodes,ComfyUI_KurtHokke_Nodes"
+  },
+  {
+    "name": "Checkpoint Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Checkpoint Loader (Simple)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "CheckpointLoaderSimpleWithNoiseSelect",
@@ -936,6 +1164,12 @@
     "node_ids": "comfyui-claude,comfyui_claude"
   },
   {
+    "name": "Conditioning Input Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "ConditioningCombineMultiple+",
     "distinct_node_count": 2,
     "total_record_count": 5,
@@ -948,16 +1182,76 @@
     "node_ids": "comfyui_essentials,comfyui_essentials_mb"
   },
   {
+    "name": "Constant Number",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "ContextModifier",
     "distinct_node_count": 2,
     "total_record_count": 12,
     "node_ids": "comfyui_ryanontheinside,comfyui_ryanonyheinside"
   },
   {
+    "name": "Control Net Model Input Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Convert Masks to Images",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Create Grid Image",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Create Grid Image from Batch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Create Morph Image",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Create Morph Image from Path",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Create Video from Path",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "CryptoCatImage",
     "distinct_node_count": 2,
     "total_record_count": 4,
     "node_ids": "comfyui_cryptocat,comfyui_cryptocat_fork"
+  },
+  {
+    "name": "Debug Number to Console",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "DebugPrint",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui-deforum,comfyui-logic"
   },
   {
     "name": "DebugTensorShape+",
@@ -1012,6 +1306,24 @@
     "distinct_node_count": 2,
     "total_record_count": 5,
     "node_ids": "comfyui-claude,comfyui_claude"
+  },
+  {
+    "name": "Dictionary to Console",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Diffusers Hub Model Down-Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Diffusers Model Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "Doom_",
@@ -1144,6 +1456,12 @@
     "distinct_node_count": 2,
     "total_record_count": 3,
     "node_ids": "ComfyUI_KurtHokke-Nodes,ComfyUI_KurtHokke_Nodes"
+  },
+  {
+    "name": "Export API",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "Face Similarity",
@@ -1620,6 +1938,12 @@
     "node_ids": "comfyui-ollamagemini,comfyui_creepy_nodes"
   },
   {
+    "name": "GeminiImageToPrompt",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "ai_text_comfyui,comfy-gemini"
+  },
+  {
     "name": "GetImageSize+",
     "distinct_node_count": 2,
     "total_record_count": 5,
@@ -1636,6 +1960,18 @@
     "distinct_node_count": 2,
     "total_record_count": 13,
     "node_ids": "comfyui_ryanontheinside,comfyui_ryanonyheinside"
+  },
+  {
+    "name": "HSL to Hex",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Hex to HSL",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "Hy3DApplyTexture",
@@ -1986,16 +2322,418 @@
     "node_ids": "comfyui_ipadapter_plus,comfyui_ipadapter_plus_fork"
   },
   {
+    "name": "Image Analyze",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Aspect Ratio",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Batch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Blank",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Blend",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Blend by Mask",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Blending Mode",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Bloom Filter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Bounds",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Bounds to Console",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Canny Filter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Chromatic Aberration",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Color Palette",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Crop Face",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Crop Location",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Crop Square Location",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Displacement Warp",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Dragan Photography Filter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Edge Detection Filter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Film Grain",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Filter Adjustments",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Flip",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Generate Gradient",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Gradient Map",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image High Pass Filter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image History Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Input Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Levels Adjustment",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Load",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Lucy Sharpen",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Median Filter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Mix RGB Channels",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Monitor Effects Filter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Nova Filter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "Image Overlay",
     "distinct_node_count": 2,
     "total_record_count": 9,
     "node_ids": "comfyui_soze,efficiency-nodes-comfyui"
   },
   {
+    "name": "Image Padding",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Paste Crop",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Paste Crop by Location",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Paste Face",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Perlin Noise",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Perlin Power Fractal",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Pixelate",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Power Noise",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Rembg (Remove Background)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Remove Background (Alpha)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "Image Remove Background (rembg)",
     "distinct_node_count": 2,
     "total_record_count": 2,
     "node_ids": "batchimg-rembg-comfyui-nodes,wtq-rembg-comfyui-node"
+  },
+  {
+    "name": "Image Remove Color",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Resize",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Rotate",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Rotate Hue",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image SSAO (Ambient Occlusion)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image SSDO (Direct Occlusion)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Save",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Seamless Texture",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Select Channel",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Select Color",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Send HTTP",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Shadows and Highlights",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Size to Number",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Stitch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Style Filter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Threshold",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Tiled",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Transpose",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image Voronoi Noise Filter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image fDOF Filter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image to Latent Mask",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image to Noise",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Image to Seed",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "ImageApplyLUT+",
@@ -2214,6 +2952,18 @@
     "node_ids": "comfyui_ryanontheinside,comfyui_ryanonyheinside"
   },
   {
+    "name": "Images to Linear",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Images to RGB",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "InjectLatentNoise+",
     "distinct_node_count": 2,
     "total_record_count": 4,
@@ -2226,10 +2976,28 @@
     "node_ids": "comfyui-ollama-describer,diffusion360_comfyui"
   },
   {
+    "name": "Input_Text",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
+  },
+  {
+    "name": "Inset Image Bounds",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "Int to String",
     "distinct_node_count": 2,
     "total_record_count": 9,
     "node_ids": "havocscall_custom_nodes,mikey_nodes"
+  },
+  {
+    "name": "Integer place counter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "JanusProCaptionImageUnderDirectory|Mie",
@@ -2260,6 +3028,18 @@
     "distinct_node_count": 2,
     "total_record_count": 4,
     "node_ids": "comfyui-mosaica,spectral"
+  },
+  {
+    "name": "KSampler (WAS)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "KSampler Cycle",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "KSamplerVariationsStochastic+",
@@ -2298,6 +3078,36 @@
     "node_ids": "comfy_felsirnodes,felsir-image-tools"
   },
   {
+    "name": "Latent Batch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Latent Input Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Latent Noise Injection",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Latent Size to Number",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Latent Upscale by Factor (WAS)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "LatentFrequencyBlender",
     "distinct_node_count": 2,
     "total_record_count": 13,
@@ -2334,10 +3144,34 @@
     "node_ids": "comfyui-prompt-control,comfyui-prompt-control-legacy"
   },
   {
+    "name": "Load Cache",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Load Image Batch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Load Lora",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "Load Styles CSV",
     "distinct_node_count": 2,
     "total_record_count": 4,
     "node_ids": "comfyui-styles_csv_loader,comfyui-styles_csv_loader_zh"
+  },
+  {
+    "name": "Load Text File",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "LoadCLIPSegModels+",
@@ -2394,6 +3228,54 @@
     "node_ids": "comfyui_ryanontheinside,comfyui_ryanonyheinside"
   },
   {
+    "name": "Logic Boolean",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Logic Boolean Primitive",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Logic Comparison AND",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Logic Comparison OR",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Logic Comparison XOR",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Logic NOT",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Lora Input Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Lora Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "LoraInfo",
     "distinct_node_count": 2,
     "total_record_count": 4,
@@ -2416,6 +3298,126 @@
     "distinct_node_count": 2,
     "total_record_count": 12,
     "node_ids": "comfyui_ryanontheinside,comfyui_ryanonyheinside"
+  },
+  {
+    "name": "Mask Arbitrary Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Batch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Batch to Mask",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Ceiling Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Crop Dominant Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Crop Minority Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Crop Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Dilate Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Dominant Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Erode Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Fill Holes",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Floor Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Gaussian Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Invert",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Minority Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Paste Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Rect Area",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Rect Area (Advanced)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Smooth Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Mask Threshold Region",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "Mask to Crop",
@@ -2532,6 +3534,30 @@
     "node_ids": "comfyui_ryanontheinside,comfyui_ryanonyheinside"
   },
   {
+    "name": "Masks Add",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Masks Combine Batch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Masks Combine Regions",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Masks Subtract",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "MergeExtraOpts",
     "distinct_node_count": 2,
     "total_record_count": 2,
@@ -2548,6 +3574,30 @@
     "distinct_node_count": 2,
     "total_record_count": 4,
     "node_ids": "comfyui-prompt-factory,comfyui-scene-composer"
+  },
+  {
+    "name": "MiDaS Depth Approximation",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "MiDaS Mask Image",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "MiDaS Model Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Model Input Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "ModelCompile+",
@@ -2638,6 +3688,72 @@
     "distinct_node_count": 2,
     "total_record_count": 4,
     "node_ids": "comfyui_essentials,comfyui_essentials_mb"
+  },
+  {
+    "name": "Number Counter",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Number Input Condition",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Number Input Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Number Multiple Of",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Number Operation",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Number PI",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Number to Float",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Number to Int",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Number to Seed",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Number to String",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Number to Text",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "OllamaGenerate",
@@ -2842,6 +3958,18 @@
     "distinct_node_count": 2,
     "total_record_count": 13,
     "node_ids": "comfyui_ryanontheinside,comfyui_ryanonyheinside"
+  },
+  {
+    "name": "Prompt Multiple Styles Selector",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Prompt Styles Selector",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "Prompt Truncate",
@@ -3534,6 +4662,12 @@
     "node_ids": "comfyui-get-random-file,comfyui-mango-random"
   },
   {
+    "name": "Random Number",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "Random Video Path",
     "distinct_node_count": 2,
     "total_record_count": 4,
@@ -3690,6 +4824,30 @@
     "node_ids": "comfyui-logicutils,comfyui_realtimenodes"
   },
   {
+    "name": "SAM Image Mask",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "SAM Model Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "SAM Parameters",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "SAM Parameters Combine",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "SD3NegativeConditioning+",
     "distinct_node_count": 2,
     "total_record_count": 5,
@@ -3730,6 +4888,18 @@
     "distinct_node_count": 2,
     "total_record_count": 3,
     "node_ids": "ComfyUI_KurtHokke-Nodes,ComfyUI_KurtHokke_Nodes"
+  },
+  {
+    "name": "Samples Passthrough (Stat System)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Save Text File",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "SaveAudioTensor",
@@ -3820,6 +4990,12 @@
     "distinct_node_count": 2,
     "total_record_count": 2,
     "node_ids": "ComfyUI_KurtHokke-Nodes,ComfyUI_KurtHokke_Nodes"
+  },
+  {
+    "name": "Seed",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "SelectIndex",
@@ -3984,6 +5160,12 @@
     "node_ids": "comfyui_bmad_nodes,havocscall_custom_nodes"
   },
   {
+    "name": "String to Text",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "StringCombineClass",
     "distinct_node_count": 2,
     "total_record_count": 4,
@@ -4014,6 +5196,228 @@
     "node_ids": "comfyui-dickson-nodes,comfyui_ttp_toolset"
   },
   {
+    "name": "Tensor Batch to Image",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Add Token by Input",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Add Tokens",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Compare",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Concatenate",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Contains",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Dictionary Convert",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Dictionary Get",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Dictionary Keys",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Dictionary New",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Dictionary To Text",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Dictionary Update",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text File History Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Find",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Find and Replace",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Find and Replace Input",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Find and Replace by Dictionary",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Input Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text List",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text List Concatenate",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text List to Text",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Load Line From File",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Multiline",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Multiline (Code Compatible)",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Parse A1111 Embeddings",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Parse Noodle Soup Prompts",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Parse Tokens",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Random Line",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Random Prompt",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Shuffle",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text Sort",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text String",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text String Truncate",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text to Conditioning",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text to Console",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text to Number",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Text to String",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "TextBox",
     "distinct_node_count": 2,
     "total_record_count": 5,
@@ -4036,6 +5440,12 @@
     "distinct_node_count": 2,
     "total_record_count": 34,
     "node_ids": "comfyui-mixlab-nodes,comfyui-ollamagemini"
+  },
+  {
+    "name": "Text_Concat",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "comfyui_billbum_api_nodes,comfyui_billbum_nodes"
   },
   {
     "name": "Tidy Tags",
@@ -4086,6 +5496,12 @@
     "node_ids": "ComfyUI-GGUF,ComfyUI-GGUF_Forked"
   },
   {
+    "name": "True Random.org Number Generator",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "UnetClipLoraLoader",
     "distinct_node_count": 2,
     "total_record_count": 3,
@@ -4110,10 +5526,34 @@
     "node_ids": "ComfyUI-GGUF,ComfyUI-GGUF_Forked"
   },
   {
+    "name": "Upscale Model Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Upscale Model Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "VAE Input Switch",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
     "name": "VAE_ExtraOpts",
     "distinct_node_count": 2,
     "total_record_count": 2,
     "node_ids": "ComfyUI_KurtHokke-Nodes,ComfyUI_KurtHokke_Nodes"
+  },
+  {
+    "name": "Video Dump Frames",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "VideoChunk",
@@ -4162,6 +5602,18 @@
     "distinct_node_count": 2,
     "total_record_count": 13,
     "node_ids": "comfyui_ryanontheinside,comfyui_ryanonyheinside"
+  },
+  {
+    "name": "Write to GIF",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
+  },
+  {
+    "name": "Write to Video",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   },
   {
     "name": "_mfc",
@@ -4282,5 +5734,11 @@
     "distinct_node_count": 2,
     "total_record_count": 2,
     "node_ids": "ComfyUI_KurtHokke-Nodes,ComfyUI_KurtHokke_Nodes"
+  },
+  {
+    "name": "unCLIP Checkpoint Loader",
+    "distinct_node_count": 2,
+    "total_record_count": 2,
+    "node_ids": "was-node-suite-comfyui,was-ns"
   }
 ]
